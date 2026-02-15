@@ -31,7 +31,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: terraform/root
+        working-directory: root
 
     steps:
       - name: Checkout
