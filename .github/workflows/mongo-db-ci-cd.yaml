@@ -6,8 +6,8 @@ on:
       - main
       - "feature/**"
     paths:
-      - "terraform/**"
-      - ".github/workflows/terraform.yml"
+      - "root/**"
+      - ".github/workflows/mongo-db-ci-cd.yml"
   workflow_dispatch:
     inputs:
       action:
