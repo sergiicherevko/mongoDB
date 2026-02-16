@@ -17,3 +17,7 @@ output "client_sg_id" {
 output "docdb_sg_id" {
   value = module.security_groups.docdb_sg_id
 }
+
+output "db_secret_arn" {
+  value = module.secrets.secret_arn
+}

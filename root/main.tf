@@ -19,3 +19,9 @@ module "security_groups" {
   name   = "mongo-db-${var.environment_stage}"
   vpc_id = module.vpc.vpc_id
 }
+
+module "secrets" {
+  source = "../modules/secrets"
+
+  name = "mongo-db-${var.environment_stage}"
+}
